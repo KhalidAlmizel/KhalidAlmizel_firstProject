@@ -18,7 +18,9 @@ System.out.println(e.toString());
   catch(RuntimeException e) {
 System.out.println(e.toString());
   }
- 
+  catch(Exception e) {
+	  System.out.println(e.toString());
+  }
  }  
 }  
 
