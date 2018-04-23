@@ -12,11 +12,15 @@ class TestMultipleCatchBlock{
 	  arr[10]=a/b;
 
 	  System.out.println(res);
-  }catch(ArithmeticException e) {
-System.out.println(e.toString());	  
   }
-  catch(RuntimeException e) {
+  catch(ArrayIndexOutOfBoundsException e) {
+	  System.out.println(e.getMessage());
+  }
+  catch(NullPointerException e) {
 System.out.println(e.toString());
+  }
+  catch (RuntimeException e) {
+	  System.out.println(e.toString());
   }
   catch(Exception e) {
 	  System.out.println(e.toString());
